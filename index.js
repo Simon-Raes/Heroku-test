@@ -9,6 +9,7 @@ app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
+var routes = require('./routes/index');
 app.use('/', routes);
 /*
 app.get('/', function(request, response) {
